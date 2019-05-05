@@ -1,0 +1,69 @@
+<template>
+    <div class="description">
+        <div class="text">
+            <h2><strong>关于我</strong></h2>
+            <hr>
+            <p>
+                博主
+                <a href="https://www.zh30.com">王江林</a>
+                ，wjl，性别男，四川巴中人士。</p>
+            <p>在校学生<br>
+                一个不断学习和研究，web前端的90后。<br>
+                在学习这条路上，最大的收获就是：自己对待人生观和价值观有了自己独特的看法。
+            </p>
+            <p>
+                github：
+                <a href="https://github.com/handsomewjl" target="_blank" rel="noopener">
+                    https://github.com/handsomewjl
+                </a><br>
+            </p>
+            <p>&nbsp;</p>
+            <h2><strong>关于博客</strong></h2>
+            <hr>
+            <p>从2009年 – 今
+                <br>博主很懒加词穷，佛系更新…
+                <br>域名 zhengoo.cn -&gt; zh30.com
+                <br>程序 tcms -&gt; WordPress
+                <br>服务器 免费空间 -&gt; 国内某收费空间 -&gt; 国外vps -&gt; 阿里云
+            </p>
+            <p>推荐便宜又稳定的xen-VPS吧:
+                <a href="https://idc.hostshare.cn/page.aspx?c=referral&amp;u=8239"
+                    rel="nofollow external">HostShare
+                </a>
+                <br>kvm vps:
+                <a href="https://my.hosteons.com/aff.php?aff=123" rel="nofollow external">hostEONS
+                </a>
+                洛杉矶节点，我在用，速度可以，可以干一些羞羞的事。
+            </p>
+        </div>
+    </div>
+</template>
+<script>
+export default {
+
+}
+</script>
+
+<style scoped lang="less">
+.description {
+    background-color: #f5f5f5;
+    text-align: left;
+    border-radius: 4px;
+    border: 1px solid #e3e3e3;
+    box-shadow: 1px 1px 5px #888;
+    padding: 20px;
+    font-size: 14px;
+    h2 {
+        font-size: 20px;
+        margin-top: 12px;
+        margin-bottom: 10px;
+        color: #000;
+    }
+    hr {
+        margin: 20px 0;
+    }
+    p {
+        margin: 0 0 10px;
+    }
+}
+</style>
