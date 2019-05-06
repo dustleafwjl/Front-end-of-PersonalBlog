@@ -1,7 +1,7 @@
 <template>
     <div class="container-right">
         <el-collapse v-model="activeNames" @change="handleChange">
-            <el-collapse-item title="随机云标签" name="1">
+            <el-collapse-item title="博客标签" name="1">
                 <could-tag/>
             </el-collapse-item>
             <el-collapse-item title="最近热门" name="2">

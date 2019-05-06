@@ -163,7 +163,7 @@ export default {
                     background-color: #eee;
                 }
                 &.active {
-                    background-color: #181919;
+                    background-color: #009688;
                     color: #fff;
                     border: none;
                 }

@@ -42,7 +42,7 @@ export default {
     .article_content {
         font-size: 14px;
         text-align: left;
-        color: #13102b;
+        color: #747474;
         padding: 0px 10px 20px 15px;
         word-wrap: break-word;
         word-break: break-all;
@@ -50,7 +50,7 @@ export default {
     }
     .article_footer {
         color: #eee;
-        background: #1f1f1f;
+        background: #009688;
         padding: 5px 10px 5px 15px;    
     }
 }

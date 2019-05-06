@@ -1,9 +1,7 @@
 <template>
     <div class="new_hot">
-        <ul class="list_group" v-for="(item, index) in titleList" :key="index">
-            <li>
-                <router-link :to="{name: 'blogDetail', query: {bid: item.id}}" tag="a">{{item.title}}</router-link>
-            </li>
+        <ul class="list_group" >
+            <router-link  v-for="(item, index) in titleList" :key="index" :to="{name: 'blogDetail', query: {bid: item.id}}" tag="li">{{item.title}}</router-link>
         </ul>
     </div>
 </template>
@@ -34,9 +32,11 @@ export default {
     .list_group {
         list-style: none;
         li {
+            cursor: pointer;
             padding: 10px 15px;
-            border-bottom: 1px solid #292929;
-            a{
+            border-bottom: 1px solid #eee;
+            &:hover {
+                background-color: #424242;
                 color: #fff;
             }
         }

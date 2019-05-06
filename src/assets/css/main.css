@@ -26,22 +26,22 @@ body {
 
 .container-right .el-collapse .el-collapse-item__header {
     padding: 0px 10px;
-    background-color: #1f1f1f;
-    color: dodgerblue;
-    border-bottom: 1px solid #333;
+    background-color: #009688;
+    color: #fff;
+    border-bottom: 1px solid #eee;
 }
 .el-collapse-item__header i {
     font-size: 16px;
     color: #fff;
 }
 .container-right .el-collapse .el-collapse-item__wrap {
-    background-color: #333 ;
+    background-color: #fff;
     
 }
 .el-collapse-item__content {
-    color: #fff;
-    line-height: auto;
+    color: #000;
     word-break: break-all;
+    padding-bottom: 0px;
 }
 .container-right .el-collapse .el-collapse-item {
     margin-bottom: 20px;

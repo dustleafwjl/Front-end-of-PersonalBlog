@@ -2,13 +2,15 @@
     <div class="blog">
         <div class="blog_title">{{blog.title}}</div>
         <div class="blog_msg">作者：WJL 标签：{{blog.tags}} 发布于：{{blog.ctime}} 浏览({{blog.views}})</div>
-        <div class="blog_content" v-html="blog.content"></div>
+        <div class="blog_content markdown-body" v-html="blog.content"></div>
     </div>
 </template>
 <script>
 import axios from '@/axios.js'
 import showdown from 'showdown'
-import '@/assets/css/index/makedown.css'
+import showdownHighlight from 'showdown-highlight'
+import '@/assets/css/index/hljs.css'
+import 'github-markdown-css'
 
 export default {
     data() {
@@ -31,7 +33,9 @@ export default {
                 url: `/queryBlogById?bid=${this.bid}`
             }).then( res => {
                 this.blog = res.data.data[0];
-                const converter = new showdown.Converter();
+                const converter = new showdown.Converter({
+                    extensions: [showdownHighlight]
+                });
                 this.blog.content = converter.makeHtml(this.blog.content);
             }).catch( error => {
                 console.log("错误！")
@@ -73,6 +77,9 @@ export default {
         word-wrap: break-word;
         word-break: break-all;
         overflow: hidden;
+    }
+    .markdown-body {
+        width: 100%;
     }
     a {
         text-decoration: none;

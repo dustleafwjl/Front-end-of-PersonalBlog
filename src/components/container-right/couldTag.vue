@@ -15,7 +15,7 @@ export default {
     },
     methods: {
         randomColor() {
-            const red = Math.random() * 255;
+            const red = 100 + Math.random() * 200;
             const green = Math.random() * 255;
             const blue = Math.random() * 255;
             return `rgb(${red}, ${green}, ${blue})`;
@@ -47,8 +47,9 @@ export default {
     padding-left: 10px;
     a {
         padding: 0 2px;
+        line-height: 25px;
         &:hover {
-            color: #fff !important;
+            color: #000 !important;
         }
     }
 }

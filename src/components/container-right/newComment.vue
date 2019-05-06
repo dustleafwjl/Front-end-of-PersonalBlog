@@ -6,7 +6,10 @@
                     <span class="c_user">{{item.name}}</span>
                     <span class="c_time">{{item.date}}</span>
                 </div>
-                <p>{{item.comment}}</p>
+                <p>
+                    {{item.comment}}
+                    <span>查看详情</span>    
+                </p>
             </li>
         </ul>
     </div>
@@ -50,7 +53,8 @@ export default {
         list-style: none;
         li {
             padding: 10px 15px;
-            border-bottom: 1px solid #292929;
+            border-bottom: 1px solid #eee;
+            cursor: pointer;
             div {
                 font-size: 14px;
                 overflow: hidden;
@@ -65,7 +69,20 @@ export default {
                 padding-top: 5px;
                 font-size: 14px;
                 color: #777;
+                span {
+                    font-size: 12px;
+                    float: right;
+                    &:hover {
+                        color: #00c1de;
+                    }
+                }
             }
+            p::after {
+                content: '';
+                display: block;
+                clear: both;
+            }
+            
         }
     }
 }

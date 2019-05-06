@@ -20,7 +20,7 @@ export default {
 .friend-link {
     .y_item {
         padding: 10px 10px 5px 10px;
-        border-bottom: 1px solid #292929;
+        border-bottom: 1px solid #eee;
         span {
             display: inline-block;
             width: 49%;

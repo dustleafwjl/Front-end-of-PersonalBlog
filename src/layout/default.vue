@@ -31,11 +31,12 @@ export default {
 <style scoped lang="less">
 
 .layout-default {
-    background-image: url('../assets/img/bg.jpg');
+    // background-image: url('../assets/img/bg.jpg');
+    background-color: #eee;
     .el-header {
         padding: 0;
         color: #fff;
-        background-color: #191818;
+        background-color: #009688;
         width: 100%;
         height: 50px !important;
     }
