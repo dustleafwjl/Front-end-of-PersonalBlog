@@ -7,7 +7,7 @@
 </template>
 <script>
 import axios from '@/axios.js'
-import showdown from 'showdown'
+// import showdown from 'showdown'
 import showdownHighlight from 'showdown-highlight'
 import '@/assets/css/index/hljs.css'
 import 'github-markdown-css'

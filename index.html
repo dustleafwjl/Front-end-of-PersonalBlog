@@ -3,10 +3,257 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href="https://cdn.bootcss.com/element-ui/2.8.2/theme-chalk/index.css" rel="stylesheet">
     <title>personal-frontend</title>
+    <style>
+        .skeleton header {
+            width: 100%;
+            height: 50px;
+            background: #009688;
+            text-align: center;
+        }
+        .skeleton header a {
+          text-decoration: none;
+        }
+        .skeleton .container {
+            position: relative;
+            width: 1170px;
+            height: 50px;
+            margin: 0 auto;
+        }
+        .skeleton .title {
+            display: inline-block;
+            /* float: left; */
+            color: #eee;
+            line-height: 50px;
+            margin: 0px 15px;
+            font-size: 18px;
+        }
+        .skeleton .meau>li {
+            display: inline-block;
+            /* float: left; */
+            height: 50px;
+            width: 58px;
+            line-height: 50px;
+            color: #eee;
+            font-size: 14px;
+        }
+        .skeleton .meau>li>a {
+            color: #fff;
+        }
+        .skeleton .search_bar>input {
+            display: inline-block;
+            position: absolute;
+            height: 22px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            outline: none;
+            border: 1px solid;
+            top: 50%;
+            right: 60px;
+            margin-top: -18px;
+        }
+        .skeleton .search_bar>button {
+            display: inline-block;
+            position: absolute;
+            width: 54px;
+            height: 34px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            top: 50%;
+            margin-top: -18px;
+            outline: none;
+            color: #555;
+            right: 0px;
+            background-color: #009688;
+        }
+        .skeleton .content {
+            position: relative;
+            margin: 30px auto 0px auto;
+            width: 1170px;
+        }
+        .skeleton .content::after {
+            display: block;
+            content: "";
+            clear: both;
+        }
+        .skeleton .content .content_left {
+            width: 66%;
+            float: left;
+            padding: 0px 20px 0px 0px;
+            box-sizing: border-box;
+        }
+        .skeleton .content .content_right {
+            width: 34%;
+            float: right;
+            padding: 0px 20px 0px 0px;
+            box-sizing: border-box;
+        }
+
+        .skeleton .right_module {
+            width: 100%;
+            background: #009688;
+            color: #fff;
+            border-radius: 10px;
+            text-align: left;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .skeleton .right_module a {
+            color: #fff;
+        }
+        /* 随机云标签 */
+        .skeleton .right_module .t_title {
+            text-align: left;
+            font-size: 14px;
+            padding: 15px 5px 15px 15px;
+            color: dodgerblue;
+            background: #009688;
+        }
+        .skeleton .right_module .tags {
+            padding: 10px 15px 25px 15px;
+        }
+        .skeleton .right_module .tags a {
+            display: inline-block;
+            font-size: 14px;
+            color: dodgerblue;
+            margin-right: 3px;
+            text-decoration: none;
+        }
+        /* 最近热门 */
+        .skeleton .right_module .list_group {
+            list-style: none;
+        }
+        .skeleton .right_module .list_group li {
+            padding: 10px 15px;
+            background: #009688;
+        }
+        /* 最新评论 */
+        .skeleton .right_module .list_group div{
+            font-size: 14px;
+            overflow: hidden;
+        }
+        .skeleton .right_module .list_group .c_user{
+            float: left;
+        }
+        .skeleton .right_module .list_group .c_time{
+            float: right;
+        }
+        .skeleton .right_module .list_group p {
+            padding-top: 5px;
+            font-size: 14px;
+            color: #777;
+        }
+        /* 友情链接 */
+        .skeleton .right_module .y_item {
+            padding: 10px 10px 5px 10px;
+            background: #eee;
+        }
+        .skeleton .right_module .y_item span {
+            display: inline-block;
+            width: 49%;
+            height: 30px;
+        }
+
+        /* footer */
+
+        .skeleton footer {
+            width: 100%;
+            height: 60px;
+            background: #eee;
+            text-align: center;
+            padding: 20px 0px;
+        }
+
+        .skeleton footer >ul {
+            display: inline-block;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .skeleton footer ul li {
+            display: inline-block;
+            color: #a2a2a2;
+            font-size: 14px;
+            margin-left: 10px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .skeleton footer p {
+            margin-top: 10px;
+            color: #a2a2a2;
+            font-size: 14px;
+        }
+    </style>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <div class="skeleton">
+        <header>
+            <div class="container">
+                <a class="title" href="/">我的个人博客 | 技术博客</a>
+                <ul class="meau">
+                    <li><a href="/">首页</a></li>
+                    <li><a href="./sitemap.html">地图</a></li>
+                    <li><a href="./about.html">关于</a></li>
+                    <li><a href="./guestbook.html">留言</a></li>
+                </ul>
+                <div class="search_bar">
+                    <input type="text" placeholder="输入关键字查找">
+                    <button>搜索</button>
+                </div>
+            </div>
+        </header>
+        <div class="content">
+            <div class="content_left">
+                <div class="every_day" id="every_day">
+                    <span>每日一句</span>
+                </div>
+            </div>
+            <div class="content_right">
+                <div class="right_module" id="random_tags">
+                    <div class="t_title">随机云标签</div>
+                    
+                </div>
+                <div class="right_module" id="new_hot">
+                    <div class="t_title">最近热门</div>
+                    
+                </div>
+                <div class="right_module" id="new_comments">
+                    <div class="t_title">最新评论</div>
+                    
+                </div>
+                <dl class="right_module">
+                    <dt class="t_title">友情链接</dt>
+                </dl>
+            </div>
+        </div>
+        <footer>
+            <ul>
+                <li>C/C++</li>
+                <li>CSS/DIV</li>
+                <li>java</li>
+                <li>javacript</li>
+                <li>Linux </li>
+                <li>Ubuntu</li>
+                <li>关于SEO分享经验</li>
+                <li>听听音乐</li>
+                <li>幽默搞笑</li>
+                <li>建站经验</li>
+                <li>新闻资讯</li>
+                <li>编程基础</li>
+            </ul>
+            <p>Copyright © 2010-2017 王江林个人博客 All rights reserved.</p>
+        </footer>
+      </div>
+    </div>
     <!-- built files will be auto injected -->
+    <script src="https://cdn.bootcss.com/vue/2.6.10/vue.js"></script>
+    <script src="https://cdn.bootcss.com/vue-router/3.0.6/vue-router.min.js"></script>
+    <script src="https://cdn.bootcss.com/vuex/3.1.0/vuex.min.js"></script>
+    <script src="https://cdn.bootcss.com/element-ui/2.8.2/index.js"></script>
+    <script src="https://cdn.bootcss.com/axios/0.19.0-beta.1/axios.min.js"></script>
+    <script src="https://cdn.bootcss.com/showdown/1.9.0/showdown.min.js"></script>
   </body>
 </html>

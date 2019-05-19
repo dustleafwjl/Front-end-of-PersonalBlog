@@ -22,19 +22,11 @@
             <hr>
             <p>从2009年 – 今
                 <br>博主很懒加词穷，佛系更新…
-                <br>域名 zhengoo.cn -&gt; zh30.com
-                <br>程序 tcms -&gt; WordPress
-                <br>服务器 免费空间 -&gt; 国内某收费空间 -&gt; 国外vps -&gt; 阿里云
+                <br>域名 www.wjlblog.top
+                <br>程序 vue-cli nodejs(express) mysql
+                <br>服务器 阿里云ECS
             </p>
-            <p>推荐便宜又稳定的xen-VPS吧:
-                <a href="https://idc.hostshare.cn/page.aspx?c=referral&amp;u=8239"
-                    rel="nofollow external">HostShare
-                </a>
-                <br>kvm vps:
-                <a href="https://my.hosteons.com/aff.php?aff=123" rel="nofollow external">hostEONS
-                </a>
-                洛杉矶节点，我在用，速度可以，可以干一些羞羞的事。
-            </p>
+            
         </div>
     </div>
 </template>

@@ -85,12 +85,15 @@ export default {
             if (page >= count) {
                 page = count;
             }
-            this.page = page;
-            if(this.tag != "") {
+            
+            if(this.tag != "" && this.page != page) {
                 this.getPageByTag(page, this.pageSize, this.tag);
             }else {
-                this.getPage(page, this.pageSize);
+                if(this.page != page) {
+                    this.getPage(page, this.pageSize);
+                }
             }
+            this.page = page;
         },
         getPageByTag(page, pageSize, tag) {
             axios({
