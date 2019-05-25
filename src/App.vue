@@ -32,7 +32,10 @@ export default {
 				};
 				document.addEventListener('DOMContentLoaded', refreshRem);
     } else {
-      console.log("pc");
+      const url = window.location.href;
+      if(url.includes("/blank/console") || url.includes("/blank/login")) {
+        return;
+      }
       this.$router.replace("/pc");
     }
   }

@@ -2,7 +2,7 @@
     <div class="header">
         <div class="row">
             <div class="col">
-                <router-link class="title" tag="a" :to="{name: 'index'}" @click.native="changeTag">WJL的个人博客|<span>技术博客</span></router-link>
+                <router-link class="title" tag="a" :to="{name: 'index'}" @click.native="changeTag">壹尘叶&nbsp;|&nbsp;<span>技术博客</span></router-link>
             </div>
             <div class="col">
                 <ul class="meau">
@@ -17,6 +17,9 @@
                     </li>
                     <li>
                         <router-link tag="a" :to="{name: 'guestbook', query: {bid: -2}}">留言板</router-link>
+                    </li>
+                    <li>
+                        <router-link tag="a" :to="{name: 'guestbook', query: {bid: -2}}">特效展示</router-link>
                     </li>
                 </ul>
             </div>
