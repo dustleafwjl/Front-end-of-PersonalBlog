@@ -32,7 +32,7 @@ export default {
 
 .layout-default {
     // background-image: url('../assets/img/bg.jpg');
-    background-color: #eee;
+    // background-color: #eee;
     .el-header {
         padding: 0;
         color: #fff;

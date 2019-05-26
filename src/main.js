@@ -7,7 +7,7 @@ import router from './router'
 // import 'element-ui/lib/theme-chalk/index.css';
 import '@/assets/css/main.css'
 import store from './store.js'
-
+import '@/assets/js/index.js'
 
 // Vue.use(ElementUI);
 

@@ -186,6 +186,18 @@
             color: #a2a2a2;
             font-size: 14px;
         }
+        body {
+            /* overflow: hidden; */
+        }
+        canvas {
+            background-color: #eee;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index: -1;
+            display: block;
+            margin: 0 auto;
+        }
     </style>
   </head>
   <body>
@@ -249,7 +261,9 @@
         </footer>
       </div>
     </div>
+    <canvas id="canvas"></canvas>
     <!-- built files will be auto injected -->
+    <!-- <script src="./static/util/index.js"></script> -->
     <script src="https://cdn.bootcss.com/vue/2.6.10/vue.js"></script>
     <script src="https://cdn.bootcss.com/vue-router/3.0.6/vue-router.min.js"></script>
     <script src="https://cdn.bootcss.com/vuex/3.1.0/vuex.min.js"></script>
