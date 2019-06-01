@@ -29,7 +29,7 @@ const Console = () => import('@/page/console.vue')
 const BlogList = () => import('@/components/blank/console/right-content/blogList.vue')
 const UpdateWord = () => import('@/components/blank/console/right-content/updateEvery.vue')
 const InsertBlog = () => import('@/components/blank/console/right-content/insertBlog.vue')
-const UpdateBlog = () => import('@/components/blank/console/right-content/updateBLog.vue')
+const UpdateBlog = () => import('@/components/blank/console/right-content/updateBlog.vue')
 
 const Mobile = () => import("@/mobile_page/mobile.vue")
 const MobileIndex = () => import("@/mobile_page/index.vue")
