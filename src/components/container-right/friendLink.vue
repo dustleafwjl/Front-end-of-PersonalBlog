@@ -1,12 +1,12 @@
 <template>
     <dl class="friend-link">
         <dd class="y_item">
-            <span>asdfas</span>
-            <span>asdffff</span>
+            <span><a href="https://github.com/handsomewjl">github</a></span>
+            <span><a href="https://gitee.com/dustleafwjl">码云</a></span>
         </dd>
         <dd class="y_item">
-            <span>asdfas</span>
-            <span>asdffff</span>
+            <span><a href="https://juejin.im/user/5ce3ea76f265da1b971a4a02">掘金</a></span>
+            <span><a href="https://www.zhipin.com/?ka=header-home">BOSS直娉</a></span>
         </dd>
     </dl>
 </template>

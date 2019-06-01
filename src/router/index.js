@@ -1,6 +1,7 @@
 // import Vue from 'vue'
 // import Router from 'vue-router'
 // import store from '@/store.js'
+import store from '../store.js'
 
 
 const defaultPage = () => import('@/layout/default.vue')
@@ -60,7 +61,12 @@ export default new VueRouter({
         }, {
           path: 'blogdetail',
           name: 'blogDetail',
-          component: BlogDetail
+          component: BlogDetail,
+          beforeEnter: (to, from, next) => {
+            store.commit("setBlogLoading", true);
+            console.log(store.state.blogLoading);
+            next();
+          }
         }
       ]
     },
@@ -133,7 +139,11 @@ export default new VueRouter({
       }, {
         path: 'm-blogdetail',
         name: 'm-blogdetail',
-        component: mBlogDetail
+        component: mBlogDetail,
+        beforeEnter: (to, from, next) => {
+          console.log("加载文件！");
+          next();
+        }
       }]
     },
     {

@@ -112,16 +112,23 @@ function Init() {
     Draw();
 };
 
+const changeH = (function () {
+    // let times = 0;
+    return () => {
+        // if(times > 3) return;
+        // times ++;
+        console.log("asdf");
+        ch = canvas.height = document.documentElement.offsetHeight == 0 ? window.innerHeight : document.documentElement.offsetHeight,
+            cy = ch / 2;
+    }
+})();
 setTimeout(function () {
     Init();
     addEventListener('resize', Init, false);
     addEventListener('scroll', changeH, false); 
 }, 15);
 
-function changeH() {
-    ch = canvas.height = document.documentElement.offsetHeight == 0 ? window.innerHeight : document.documentElement.offsetHeight,
-        cy = ch / 2;
-}
+
 
 function Intersect2lines(l1, l2) {
     var p1 = l1.a,

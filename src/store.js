@@ -10,7 +10,8 @@ const state = {
     user: {},
     blogList: [],
     blogCount: 0,
-    nowPage: 1
+    nowPage: 1,
+    blogLoading: false
 }
 const mutations = {
     setTag(state, val) {
@@ -31,6 +32,9 @@ const mutations = {
     },
     setNowPage(state, page) {
         state.nowPage = page;
+    },
+    setBlogLoading(state, val) {
+        state.blogLoading = val;
     }
 }
 

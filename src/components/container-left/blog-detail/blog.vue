@@ -28,6 +28,7 @@ export default {
     },
     methods: {
         init() {
+            // console.log("加载完成！")
             axios({
                 method: "get",
                 url: `/queryBlogById?bid=${this.bid}`

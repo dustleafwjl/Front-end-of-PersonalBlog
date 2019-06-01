@@ -21,7 +21,7 @@ export default {
         
     },
     created() {
-        
+        console.log("加载完成！")
     }
 }
 </script>
