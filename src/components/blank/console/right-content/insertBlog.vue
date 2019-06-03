@@ -45,7 +45,7 @@ export default {
             }
             axios({
                 method: "post",
-                url: `/insertBlog`,
+                url: `/editBlog`,
                 data: this.cacheBlog
             }).then( res => {
                 const answer = confirm('添加成功！是否返回博客首页！');

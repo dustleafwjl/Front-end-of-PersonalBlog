@@ -1,7 +1,8 @@
 var canvas = document.getElementById("canvas");
 const app = document.getElementById("app");
 var ctx = canvas.getContext("2d");
-var cw = canvas.width = window.innerWidth,
+
+var cw = canvas.width = document.body.clientWidth,
     cx = cw / 2;
 var ch = canvas.height = window.innerHeight,
     cy = ch / 2;
@@ -123,10 +124,10 @@ const changeH = (function () {
     }
 })();
 setTimeout(function () {
-    Init();
     addEventListener('resize', Init, false);
-    addEventListener('scroll', changeH, false); 
-}, 15);
+    addEventListener('scroll', changeH, false);
+    Init(); // init函数执行放在后面，确保resize事件绑定完成，出现滚动条会触发resize，也会改变页面width
+}, 0);
 
 
 
