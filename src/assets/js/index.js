@@ -129,7 +129,12 @@ setTimeout(function () {
     Init(); // init函数执行放在后面，确保resize事件绑定完成，出现滚动条会触发resize，也会改变页面width
 }, 0);
 
-
+setTimeout(function () {
+    Init();
+}, 1000);
+setTimeout(function () {
+    Init();
+}, 2000);
 
 function Intersect2lines(l1, l2) {
     var p1 = l1.a,
