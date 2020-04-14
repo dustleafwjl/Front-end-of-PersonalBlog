@@ -36,7 +36,7 @@ export default {
     .el-header {
         padding: 0;
         color: #fff;
-        background-color: #009688;
+        background-color: #292421;
         width: 100%;
         height: 50px !important;
     }

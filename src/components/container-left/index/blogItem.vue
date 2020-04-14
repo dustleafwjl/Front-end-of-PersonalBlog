@@ -126,7 +126,7 @@ export default {
     }
     .article_footer {
         color: #eee;
-        background: #009688;
+        background: #292421;
         padding: 5px 10px 5px 15px;    
     }
 }

@@ -27,7 +27,7 @@ export default {
 <style scoped lang="less">
 .guestbook {
     .description {
-        background-color: #f5f5f5;
+        background-color: #292421;
         text-align: left;
         border-radius: 4px;
         border: 1px solid #e3e3e3;

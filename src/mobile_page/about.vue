@@ -50,7 +50,7 @@ export default {
 .description {
     width: 7.2rem;
     margin: .1rem auto;
-    background-color: #f5f5f5;
+    background-color: #292421;
     text-align: left;
     border-radius: .04rem;
     border: 1px solid #e3e3e3;
